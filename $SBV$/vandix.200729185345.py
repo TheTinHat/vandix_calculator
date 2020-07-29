@@ -22,7 +22,7 @@ def vandix(shapefile='', pruid='', cduid='', cmapuid=''):
         elif area_type == 3:
             cmapuid = int(input('Enter CMAPAUID: '))
         elif area_type == 4:
-            print("Warning: if running from docker container, you must first copy the shapefile into the container itself")
+            print("Warning: if running from docker container, you must first copy the shapefile into the container itself"
             shapefile = input('Enter path to shapefile (.shp): ') 
         elif area_type == 5:
             filename = 'canada'
