@@ -129,9 +129,9 @@ def vandix(shapefile='', pruid='', cduid='', cmapuid=''):
     census_das = census_das.drop(columns, axis=1)
 
     # Export shapefile
-    if os.path.exists('/vandix') is False:
-        os.mkdir('/vandix')
-    filename = '/vandix/' + str(filename) + '_vandix.shp'
+    if os.path.exists('/data') is False:
+        os.mkdir('/data')
+    filename = '/data/' + str(filename) + '_vandix.shp'
     census_das.to_file(filename)
     print("Done! VANDIX shapefile saved to " + str(filename))
     return census_das

@@ -1,12 +1,12 @@
 FROM ubuntu:focal
 
 LABEL David Swanlund
-ENV PROJ_DIR /usr/local
 RUN apt update -y
 RUN apt install -y python3-pip
 WORKDIR /app
-COPY requirements.txt .
-COPY vandix.py .
+COPY . .
 RUN pip3 install -r requirements.txt
+
+
 ENTRYPOINT ["python3"]
 CMD ["vandix.py"]
