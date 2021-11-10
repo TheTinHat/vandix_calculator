@@ -2,10 +2,10 @@
 
 A Docker container that calculates the Vancouver Area Neighborhood Deprivation Index for varying geographies.
 
-To use, make a folder in the current directory called 'data'. Then run the following command:
+To use, make a folder in the current directory called `data`. Then run the following command, of course substituting the `C:\Users\David\data` filepath for whever your `data` folder is.
 
 ```
-docker run -it -v data:/data/ dswanlund/vandix
+docker run -it -v C:\Users\David\data:/data/ dswanlund/vandix
 ```
 
 
