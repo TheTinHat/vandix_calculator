@@ -11,4 +11,4 @@ docker run -it -v data:/data/ dswanlund/vandix
 
 Note that if you want to calculate VANDIX for dissemination areas that intersect with a particular shapefile, ensure that you put that shapefile in the data folder beforehand.
 
-![Instructions](vandix_instructions.gif)
+![Instructions](vandix_instruction.gif)
